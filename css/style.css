@@ -28,3 +28,12 @@ html {
 #o-mnie, #tabela {
     margin-top: 100px;
 }
+
+.defaultLink {
+    color: #525151;
+}
+
+.defaultLink:hover {
+    color: #7a7878;
+    text-decoration: none;
+}
