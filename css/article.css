@@ -13,7 +13,7 @@
     margin: 20px 0 50px 0;
 }
 
-.article_headingLvl2--target:target {
+.article__headingLvl2--target:target {
     display: block;
     padding-top: 150px;
 }
