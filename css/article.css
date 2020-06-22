@@ -1,0 +1,35 @@
+.article {
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+}
+
+.article__headingLvl2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 50px;
+    padding-right: 20px;
+    line-height: 1;
+    margin: 20px 0 50px 0;
+}
+
+.article_headingLvl2--target:target {
+    display: block;
+    padding-top: 150px;
+}
+
+.article__paragraph {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 640px) {
+    .article__headingLvl2 {
+        font-size: 30px;
+    }
+
+    .article__paragraph {
+        padding-left: 20px;
+    }
+}

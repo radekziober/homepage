@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+::selection {
+    color: rgba(255,255,255,.99);
+    background: rgba(0,0,0,.99);
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.containerAll {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+#o-mnie {
+    margin-top: 100px;
+}
