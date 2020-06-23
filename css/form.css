@@ -1,85 +1,87 @@
 .formSection {
-    padding: 50px 20px 50px 20px;
+  padding: 50px 20px 50px 20px;
 }
 
 .formSection__headingLvl2 {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 50px;
-    padding-right: 20px;
-    line-height: 1;
-    margin: 20px 0 50px 0;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 50px;
+  padding-right: 20px;
+  line-height: 1;
+  margin: 20px 0 50px 0;
 }
 
 .formSection__headingLvl2--target:target {
-    display: block;
-    padding-top: 150px;
+  display: block;
+  padding-top: 150px;
 }
 
 .form {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .form__fieldset {
-    border: 0px none;
-    padding: 20px 0 10px 0;
-    margin-right: 50px;
+  border: 0px none;
+  padding: 20px 0 10px 0;
+  margin-right: 50px;
 }
 
 .form__legend {
-    font-weight: 900;
-    text-transform: uppercase;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .form__legend--number {
-    display: inline-block;
-    background-color: #FEF200;
-    border-radius: 100%;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    margin-right: 5px;
+  display: inline-block;
+  background-color: #fef200;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin-right: 5px;
 }
 
 .form__label {
-    font-weight: 700;
-    padding-left: 10px;
+  font-weight: 700;
+  padding-left: 10px;
 }
 
 .form__inputText {
-    display: block;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    padding: 5px 10px 5px 10px;
-    color: #3f3f3f;
-    font-size: 16px;
-    min-width: 350px;
-    min-height: 40px;
-    outline: initial;
-    box-shadow: inset 5px 5px 13px 0px #CECECE;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  color: #3f3f3f;
+  font-size: 16px;
+  min-width: 350px;
+  min-height: 40px;
+  outline: initial;
+  box-shadow: inset 5px 5px 13px 0px #cecece;
 }
 
 .form__inputText:hover {
-    border-color: #FEF200;
+  border-color: #fef200;
 }
 
 .form__inputText:focus {
-    border: 1px solid #000000;
-    background-color: #FEF200;
-    box-shadow: inset 5px 5px 13px 0px #918A00;
+  border: 1px solid #000000;
+  background-color: #fef200;
+  box-shadow: inset 5px 5px 13px 0px #918a00;
 }
 
 .form__list {
-    line-height: 1.5;
-    list-style: none;
-    list-style-position: inside;
-    padding: 10px;
-    margin: 0;
+  line-height: 1.5;
+  list-style: none;
+  list-style-position: inside;
+  padding: 10px;
+  margin: 0;
 }
 
-.form__inputRadio, .form__inputCheckbox {
-    margin-right: 5px;
+.form__inputRadio,
+.form__inputCheckbox {
+  margin-right: 5px;
 }
