@@ -1,9 +1,8 @@
-.tableContainer {
+.tableSection {
     padding: 50px 20px 50px 20px;
-    overflow-x: auto;
 }
 
-.tableContainer__headingLvl2 {
+.tableSection__headingLvl2 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 700;
@@ -13,9 +12,13 @@
     margin: 20px 0 50px 0;
 }
 
-.tableContainer__headingLvl2--target:target {
+.tableSection__headingLvl2--target:target {
     display: block;
     padding-top: 150px;
+}
+
+.tableContainer {
+    overflow-x: auto;
 }
 
 .table {
@@ -78,3 +81,7 @@
     background-color: #dddddd;
 }
 
+@media screen and (max-width: 640px) {
+    .tableSection__headingLvl2 {
+        font-size: 30px;
+    }
