@@ -145,7 +145,42 @@
                     </fieldset>
                     <fieldset class="form__fieldset">
                         <legend class="form__legend"><span class="form__legend--number">2</span> Twój profil</legend>
-                        
+
+                        <label class="form__label">Ulubiony napój:</label>
+                        <ul class="form__list">
+                            <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Sok owocowy"> Sok owocowy</label></li>
+                            <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Coca-Cola"> Coca-Cola</label></li>
+                            <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Pepsi"> Pepsi</label></li>
+                            <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Piwo"> Piwo</label></li>
+                            <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Wódka"> Wódka</label></li>
+                        </ul>
+
+                        <label class="form__label">Zainteresowania:</label>
+                        <ul class="form__list">
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Książki"> Książki</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Sport"> Sport</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Podróże"> Podróże</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Gotowanie"> Gotowanie</label></li>
+                        </ul>
+
+                        <label class="form__label">Twój samochód
+                            <select name="myCar" >
+                                <optgroup label="VAG"> 
+                                    <option>AUDI</option>
+                                    <option>Volkswagen</option>
+                                    <option>SEAT</option>
+                                    <option>Skoda</option>
+                                </optgroup>      
+                                <optgroup label="PSA"> 
+                                    <option>Citroen</option>
+                                    <option>Peugeot</option>
+                                </optgroup>     
+                                <optgroup label="Inne"> 
+                                    <option>Renault</option>
+                                    <option>Honda</option>
+                                </optgroup>    
+                            </select>
+                        </label>
                     </fieldset>
                 </form>
             </section>
