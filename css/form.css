@@ -78,6 +78,7 @@
 
 .form__inputFile {
     visibility: hidden;
+    width: 100%;
 }
 
 .form__inputFileNew {
@@ -174,6 +175,54 @@
     resize: vertical;
 }
 
+.form__submitButton {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    transition: 0.6s;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #FEF200;
+    cursor: pointer;
+}
+
+.form__submitButton:hover {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline #ffffff;
+    transition: 0.6s;
+}
+
+.form__resetButton {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #575757;
+    transition: 0.6s;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+
+.form__resetButton:hover {
+    background-color: #808080;
+    color: #ffffff;
+    text-decoration: underline #ffffff;
+    transition: 0.6s;
+}
+
+.form__submitButton:focus,
+.form__resetButton:focus {
+    outline: inherit;
+}
 
 @media screen and (max-width: 640px) {
     .formSection__headingLvl2 {
