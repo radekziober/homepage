@@ -31,9 +31,15 @@
     margin-bottom: 30px;
 }
 
-.form__fieldset:last-child {
+.form__fieldset:nth-child(3) {
     margin-right: 0;
     max-width: 250px;
+}
+
+.form__fieldset--submitFieldset{
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .form__legend {
@@ -56,7 +62,8 @@
     padding-left: 10px;
 }
 
-.form__inputText {
+.form__inputText, 
+.form__inputDate {
     display: block;
     border: 1px solid #000000;
     border-radius: 20px;
@@ -111,13 +118,15 @@
 
 .form__inputText:hover, 
 .form__select:hover, 
-.form__textarea:hover {
+.form__textarea:hover,
+.form__inputDate:hover {
     border-color: #fef200;
 }
 
 .form__inputText:focus, 
 .form__select:focus, 
-.form__textarea:focus {
+.form__textarea:focus,
+.form__inputDate:focus {
     border: 1px solid #000000;
     background-color: #fef200;
     box-shadow: inset 5px 5px 13px 0px #918a00;
@@ -131,7 +140,8 @@
     margin: 0;
 }
 
-.form__inputRadio, .form__inputCheckbox {
+.form__inputRadio, 
+.form__inputCheckbox {
     margin-right: 5px;
 }
 
@@ -162,4 +172,11 @@
     box-shadow: inset 5px 5px 13px 0px #cecece;
     margin-top: 10px;
     resize: vertical;
+}
+
+
+@media screen and (max-width: 640px) {
+    .formSection__headingLvl2 {
+        font-size: 30px;
+    }
 }

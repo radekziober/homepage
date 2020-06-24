@@ -35,7 +35,7 @@
             <ul class="navigation__list">
                 <li><a href="#o-mnie" class="navigation__list--item">O mnie</a></li>
                 <li><a href="#tabela" class="navigation__list--item">Tabela</a></li>
-                <li><a href="#" class="navigation__list--item">Umiejętności</a></li>
+                <li><a href="#formularz" class="navigation__list--item">Formularz</a></li>
                 <li><a href="#kontakt" class="navigation__list--item">Kontakt</a></li>
             </ul>
         </nav>
@@ -134,21 +134,20 @@
 
             <!-- form section -->
             <section class="formSection">
-                <h2 class="formSection__headingLvl2"><a name="kontakt" class="formSection__headingLvl2--target">Formularz i jego stylowanie</a></h2>
-                <form class="form" method="POST">
+                <h2 class="formSection__headingLvl2"><a name="formularz" class="formSection__headingLvl2--target">Formularz i jego stylowanie</a></h2>
+                <form class="form" action="https://postman-echo.com/post" method="POST" enctype="multipart/form-data">
                     <fieldset class="form__fieldset">
                         <legend class="form__legend"><span class="form__legend--number">1</span> Twoje dane</legend>
-                        <p>
-                            <label class="form__label" for="name">Imię*: <input class="form__inputText" id="name" type="text" required></label>    
-                        </p>
+                        <label class="form__label" for="name">Imię*: <input class="form__inputText" id="name" type="text" required></label>    
                         <label class="form__label" for="secondname">Nazwisko*: <input class="form__inputText" id="secondname" type="text" required></label>
                         <label class="form__label" for="mail">E-mail*: <input class="form__inputText" id="mail" type="email" required></label>
                         <label class="form__label" for="age">Wiek: <input class="form__inputText" id="age" type="number" min="5"></label>
+                        <label class="form__label">Data urodzin: <input class="form__inputDate" type="date" name="birthDate"></label>
                     </fieldset>
                     <fieldset class="form__fieldset">
                         <legend class="form__legend"><span class="form__legend--number">2</span> Twój profil</legend>
 
-                        <label class="form__label">Ulubiony napój:</label>
+                        <label class="form__label" for="favoriteDrink">Ulubiony napój:</label>
                         <ul class="form__list">
                             <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Sok owocowy"> Sok owocowy</label></li>
                             <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Coca-Cola"> Coca-Cola</label></li>
@@ -159,27 +158,27 @@
 
                         <label class="form__label">Zainteresowania:</label>
                         <ul class="form__list">
-                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Książki"> Książki</label></li>
-                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Sport"> Sport</label></li>
-                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Podróże"> Podróże</label></li>
-                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Gotowanie"> Gotowanie</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Książki" value="Książki"> Książki</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Sport" value="Sport"> Sport</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Podróże" value="Podróże"> Podróże</label></li>
+                            <li><label><input class="form__inputCheckbox" type="checkbox" name="Gotowanie" value="Gotowanie"> Gotowanie</label></li>
                         </ul>
 
                         <label class="form__label">Twój samochód<br>
                             <select name="yourCar" class="form__select">
                                 <optgroup label="VAG"> 
-                                    <option>AUDI</option>
-                                    <option>Volkswagen</option>
-                                    <option>SEAT</option>
-                                    <option>Skoda</option>
+                                    <option value="AUDI">AUDI</option>
+                                    <option value="Volkswagen">Volkswagen</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="Skoda">Skoda</option>
                                 </optgroup>      
                                 <optgroup label="PSA"> 
-                                    <option>Citroen</option>
-                                    <option>Peugeot</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Peugeot">Peugeot</option>
                                 </optgroup>     
                                 <optgroup label="Inne"> 
-                                    <option>Renault</option>
-                                    <option>Honda</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Honda">Honda</option>
                                 </optgroup>    
                             </select>
                         </label>
@@ -190,18 +189,16 @@
                             <label class="form__label">Treść wiadomości:<br>
                                 <textarea class="form__textarea" rows="3" name="opis"></textarea>
                             </label>
-                        </p>
-                        <p>
+                        
                             <label class="form__label" for="fileUpload">Dodaj zdjęcie:<br>
                                 <span class="form__inputFileNew"><span class="form__inputFileNewIcon">&DownArrowBar;</span> <span class="js-textValue">Wybierz plik</span></span>
                                 <input class="form__inputFile js-inputFile" type="file" id="fileUpload" name="fileUpload" value="wybierz_plik">
                             </label>
-                        </p>
-                        <p>
-                            <label class="form__label">Data urodzin:<br>
-                                <input class="form__inputDate" type="date" name="birthDate">
-                            </label>
-                        </p>
+                        
+                    </fieldset>
+                    <fieldset class="form__fieldset form__fieldset--submitFieldset">
+                        <button>Wyślij</button>
+                        <button type="reset">Wyczyść dane</button>
                     </fieldset>
                 </form>
             </section>
