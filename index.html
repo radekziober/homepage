@@ -138,9 +138,11 @@
                 <form class="form" method="POST">
                     <fieldset class="form__fieldset">
                         <legend class="form__legend"><span class="form__legend--number">1</span> Twoje dane</legend>
-                        <label class="form__label" for="name">Imię*: <input class="form__inputText" id="name" type="text" required></label>
+                        <p>
+                            <label class="form__label" for="name">Imię*: <input class="form__inputText" id="name" type="text" required></label>    
+                        </p>
                         <label class="form__label" for="secondname">Nazwisko*: <input class="form__inputText" id="secondname" type="text" required></label>
-                        <label class="form__label" for="mail">E-mail*: <input class="form__inputText" id="mail" type="text" required></label>
+                        <label class="form__label" for="mail">E-mail*: <input class="form__inputText" id="mail" type="email" required></label>
                         <label class="form__label" for="age">Wiek: <input class="form__inputText" id="age" type="number" min="5"></label>
                     </fieldset>
                     <fieldset class="form__fieldset">
@@ -163,8 +165,8 @@
                             <li><label><input class="form__inputCheckbox" type="checkbox" name="Gotowanie"> Gotowanie</label></li>
                         </ul>
 
-                        <label class="form__label">Twój samochód
-                            <select name="myCar" >
+                        <label class="form__label">Twój samochód<br>
+                            <select name="yourCar" class="form__select">
                                 <optgroup label="VAG"> 
                                     <option>AUDI</option>
                                     <option>Volkswagen</option>
@@ -181,6 +183,26 @@
                                 </optgroup>    
                             </select>
                         </label>
+                    </fieldset>
+
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend"><span class="form__legend--number">3</span> Dodatkowe dane</legend>
+                        <p>
+                            <label class="form__label">Treść wiadomości:<br>
+                                <textarea class="form__textarea" rows="3" name="opis"></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <label class="form__label" for="fileUpload">Dodaj zdjęcie:<br>
+                                <span class="form__inputFileNew"><span class="form__inputFileNewIcon">&DownArrowBar;</span> <span class="js-textValue">Wybierz plik</span></span>
+                                <input class="form__inputFile js-inputFile" type="file" id="fileUpload" name="fileUpload" value="wybierz_plik">
+                            </label>
+                        </p>
+                        <p>
+                            <label class="form__label">Data urodzin:<br>
+                                <input class="form__inputDate" type="date" name="birthDate">
+                            </label>
+                        </p>
                     </fieldset>
                 </form>
             </section>
