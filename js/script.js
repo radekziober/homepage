@@ -13,8 +13,8 @@
 {
     const fileUpload = document.querySelector(".js-inputFile");
     const textFile = document.querySelector(".js-textValue");
-    const inputFileValid = document.querySelector(".form__inputFileNew");
-
+    const inputFileValid = document.querySelector(".js-inputFileNew");
+    
     fileUpload.addEventListener("input", () => {
         textFile.innerHTML = `${fileUpload.value.split('\\').pop().split('/').pop()}`;
         inputFileValid.classList.toggle("js-inputFileValid");
