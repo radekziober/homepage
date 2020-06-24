@@ -56,15 +56,15 @@
 
             <!-- about -->
             <article class="article">
-                <h2 class="article__headingLvl2"><a name="o-mnie" class="article__headingLvl2--target">Słów kilka...</a>
+                <h2 class="article__headingLvl2"><a id="o-mnie" class="article__headingLvl2--target">Słów kilka...</a>
                 </h2>
                 <p class="article__paragraph">Do kursu podchodzę z wielką nadzieją, po 6-cio letniej nieaktywności znów
                     czuję głód wiedzy i pisania
                     kodu. Pierwszy kontakt ze światem tworzenia stron www miałem w gimnazjum ok. 16 lat temu, wtedy
                     zająłem
                     II miejsce w konkursie na stworzenie strony www. Od tego momentu wiedziałem, że tym będę się
-                    zajmował, bo sprawiało mi to ogromną radość. Przez kolejne 10 lat byłem dorywczym <stron>
-                        Freelancer'em</stron>,
+                    zajmował, bo sprawiało mi to ogromną radość. Przez kolejne 10 lat byłem dorywczym <strong>
+                        Freelancer'em</strong>,
                     tworzyłem głównie oprawę wizualną,
                     czyli tzw. <b>WEB DESIGN</b>, a w między czasie ciąłem projekty graficzne. Wtedy popularnym
                     standardem był <em>HTML4</em>
@@ -82,46 +82,46 @@
 
             <!-- table section -->
             <section class="tableSection">
-                <h2 class="tableSection__headingLvl2"><a name="tabela" class="tableSection__headingLvl2--target">Tabela
+                <h2 class="tableSection__headingLvl2"><a id="tabela" class="tableSection__headingLvl2--target">Tabela
                         i jej stylowanie</a></h2>
                 <div class="tableContainer">
                     <table class="table">
                         <caption class="table__caption">Tabela przedstawia najczęściej odsłuchiwane przeze mnie utwory w
-                            roku 2019 wg danych z profilu <a href="http://www.last.fm" targer="_blank"
+                            roku 2019 wg danych z profilu <a href="http://www.last.fm" target="_blank"
                                 class="defaultLink">Last.fm</a>.</caption>
                         <tr>
-                            <th class="table__columnTitle" scope="col">Wykonawca</td>
-                            <th class="table__columnTitle" scope="col">Album</td>
-                            <th class="table__columnTitle" scope="col">Utwór</td>
-                            <th class="table__columnTitle" scope="col">Łącznie scroblle'i</td>
+                            <th class="table__columnTitle" scope="col">Wykonawca</th>
+                            <th class="table__columnTitle" scope="col">Album</th>
+                            <th class="table__columnTitle" scope="col">Utwór</th>
+                            <th class="table__columnTitle" scope="col">Łącznie scroblle'i</th>
                         </tr>
                         <tbody class="table__body">
                             <tr class="table__row">
-                                <th class="table__cell" scope="row">Bring Me The Horizon</td>
+                                <th class="table__cell" scope="row">Bring Me The Horizon</th>
                                 <td class="table__cell">Sempiternal (Deluxe)</td>
                                 <td class="table__cell">Hospital for Souls</td>
                                 <td class="table__cell">300</td>
                             </tr>
                             <tr class="table__row">
-                                <th class="table__cell" scope="row">Limp Bizkit</td>
+                                <th class="table__cell" scope="row">Limp Bizkit</th>
                                 <td class="table__cell">Significant Other</td>
                                 <td class="table__cell">Break Stuff</td>
                                 <td class="table__cell">293</td>
                             </tr>
                             <tr class="table__row">
-                                <th class="table__cell" scope="row">Muse</td>
+                                <th class="table__cell" scope="row">Muse</th>
                                 <td class="table__cell">Black Holes and Revelations</td>
                                 <td class="table__cell">Supermassive Black Hole</td>
                                 <td class="table__cell">186</td>
                             </tr>
                             <tr class="table__row">
-                                <th class="table__cell" scope="row">Rammstein</td>
+                                <th class="table__cell" scope="row">Rammstein</th>
                                 <td class="table__cell">Rammstein</td>
                                 <td class="table__cell">AUSLÄNDER</td>
                                 <td class="table__cell">181</td>
                             </tr>
                             <tr class="table__row">
-                                <th class="table__cell" scope="row">Korn</td>
+                                <th class="table__cell" scope="row">Korn</th>
                                 <td class="table__cell">See You on the Other Side</td>
                                 <td class="table__cell">Coming Undone</td>
                                 <td class="table__cell">69</td>
@@ -134,7 +134,7 @@
 
             <!-- form section -->
             <section class="formSection">
-                <h2 class="formSection__headingLvl2"><a name="formularz" class="formSection__headingLvl2--target">Formularz i jego stylowanie</a></h2>
+                <h2 class="formSection__headingLvl2"><a id="formularz" class="formSection__headingLvl2--target">Formularz i jego stylowanie</a></h2>
                 <form class="form" action="https://postman-echo.com/post" method="POST" enctype="multipart/form-data">
                     <fieldset class="form__fieldset">
                         <legend class="form__legend"><span class="form__legend--number">1</span> Twoje dane</legend>
@@ -147,7 +147,7 @@
                     <fieldset class="form__fieldset">
                         <legend class="form__legend"><span class="form__legend--number">2</span> Twój profil</legend>
 
-                        <label class="form__label" for="favoriteDrink">Ulubiony napój:</label>
+                        <label class="form__label">Ulubiony napój:</label>
                         <ul class="form__list">
                             <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Sok owocowy"> Sok owocowy</label></li>
                             <li><label><input class="form__inputRadio" type="radio" name="favoriteDrink" value="Coca-Cola"> Coca-Cola</label></li>
@@ -192,7 +192,7 @@
                         
                             <label class="form__label" for="fileUpload">Dodaj zdjęcie:<br>
                                 <span class="form__inputFileNew"><span class="form__inputFileNewIcon">&DownArrowBar;</span> <span class="js-textValue">Wybierz plik</span></span>
-                                <input class="form__inputFile js-inputFile" type="file" id="fileUpload" name="fileUpload" value="wybierz_plik">
+                                <input class="form__inputFile js-inputFile" type="file" id="fileUpload" name="fileUpload">
                             </label>
                         
                     </fieldset>
