@@ -7,7 +7,7 @@
     font-weight: 700;
     font-size: 90px;
     line-height: 100%;
-    margin: 50px 0 25px 0;
+    margin: 50px 0 50px 0;
     padding:0 20px 0 20px;
 }
 
@@ -20,9 +20,13 @@
 
 .heading__highline {
     border-color: #000000;
-    border-width: 5px;
+    border: 0;
     width: 25%;
     margin-left: 20px;
+}
+
+.heading__highline--topBorder {
+    border-top: 10px #000000 solid;
 }
 
 .heading__paragraph {
