@@ -4,7 +4,7 @@
     const aboutIllustration = document.querySelector(".js-aboutIllustration");
 
     changeImage.addEventListener("click", () => {
-        aboutIllustration.classList.toggle("js-aboutIllustration");
+        aboutIllustration.classList.toggle("js-aboutIllustrationNew");
     });
 
 }
