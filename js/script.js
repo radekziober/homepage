@@ -1,10 +1,10 @@
 // image change button
 { 
-    const changeImage = document.querySelector(".heading__changeImage");
-    const aboutIllustration = document.querySelector(".heading__aboutIllu");
+    const changeImage = document.querySelector(".js-changeImageButton");
+    const aboutIllustration = document.querySelector(".js-aboutIllustration");
 
     changeImage.addEventListener("click", () => {
-        aboutIllustration.classList.toggle("heading__aboutIllu2");
+        aboutIllustration.classList.toggle("js-aboutIllustration");
     });
 
 }
