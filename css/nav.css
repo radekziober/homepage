@@ -18,7 +18,7 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.navigation__list--item {
+.navigation__listItem {
     display: inline-block;
     padding: 5px 10px 5px 10px;
     margin-bottom: 5px;
@@ -33,9 +33,9 @@
     background-color: #ffffff;
 }
 
-.navigation__list--item:hover, 
-.navigation__list--item:active,
-.navigation__list--item:focus {
+.navigation__listItem:hover, 
+.navigation__listItem:active,
+.navigation__listItem:focus {
     background-color: #000000;
     color: #ffffff;
     text-decoration: underline #FEF200;

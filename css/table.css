@@ -35,12 +35,6 @@
     padding-top:10px;
 }
 
-.table__columnTitle {
-    border-bottom: 5px #000000 solid;
-    background-color: #dddddd;
-    padding:5px;
-}
-
 .table__columnTitle:first-child {
     border-top-left-radius: 10px;
 }
@@ -65,7 +59,7 @@
 }
 .table__row:hover {
     color: #000000;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #FEF200;
 }
 
@@ -75,6 +69,12 @@
 
 .table__cell {
     padding:5px 2px 5px 2px;
+}
+
+.table__cell--title {
+    border-bottom: 5px #000000 solid;
+    background-color: #dddddd;
+    padding:5px;
 }
 
 .table__cell:first-child {
